@@ -553,4 +553,7 @@ redirectpatterns = (
     redirect(r'^firefox/default\.htm', '/firefox/'),
     redirect(r'^firefox/android/(?P<version>\d+\.\d+(?:\.\d+)?)$', '/firefox/android/{version}/releasenotes/'),
     redirect(r'^firefox/stats/', '/firefox/'),
+
+    # bug 1416706
+    redirect(r'^firefox/desktop/?', 'firefox'),
 )
